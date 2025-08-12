@@ -107,7 +107,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-800 p-6">
+      <div className="min-h-screen bg-[#e4e6e3] text-gray-800 p-6">
       <a
         href="https://wa.me/5511940365963"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50"
@@ -118,7 +118,7 @@ export default function App() {
       
       {/* Header */}
       <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold mb-2 text-blue-700">Planos de Saúde com Ellen Castro Saturni</h1>
+        <img src="/logo_ellen.png" alt="Ellen Castro Saturni - Corretora de Planos de Saúde" className="h-24 mx-auto mb-4" />
         <p className="text-lg max-w-2xl mx-auto">
           Planos personalizados de acordo com o seu perfil, suas necessidades e seu orçamento. Atendimento humano, direto e eficiente. Conte com a expertise de quem entende do mercado e se importa com o seu bem-estar.
         </p>
@@ -128,38 +128,38 @@ export default function App() {
       <div className="text-center mb-10">
         <a
           href="https://wa.me/5511940365963"
-          className="inline-block bg-blue-700 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-800 transition-colors blink-animation"
+          className="inline-block bg-[#759a9f] text-white px-6 py-3 rounded-xl text-lg hover:bg-[#628185] transition-colors blink-animation"
         >
           Fale agora com a Ellen
         </a>
       </div>
 
       {/* Hero Section - Formulário de cotação */}
-      <section className="bg-blue-100 rounded-2xl shadow-md p-6 max-w-2xl mx-auto mb-10">
-        <h2 className="text-2xl font-semibold mb-4 text-blue-800">Solicite sua cotação</h2>
+      <section className="bg-[#e4e6e3] rounded-2xl shadow-md p-6 max-w-2xl mx-auto mb-10">
+        <h2 className="text-2xl font-semibold mb-4 text-[#759a9f]">Solicite sua cotação</h2>
         <form className="grid gap-4" action="https://formsubmit.co/ellen.saturni@gmail.com" method="POST">
-          <input type="text" name="nome" placeholder="Nome completo" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-          <input type="tel" name="telefone" placeholder="Telefone (WhatsApp)" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-          <input type="email" name="email" placeholder="E-mail" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          <input type="text" name="nome" placeholder="Nome completo" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-[#759a9f]" required />
+          <input type="tel" name="telefone" placeholder="Telefone (WhatsApp)" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-[#759a9f]" required />
+          <input type="email" name="email" placeholder="E-mail" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-[#759a9f]" required />
 
           <div>
             <label className="block mb-1 font-medium">Tipo de plano:</label>
             <div className="flex gap-4 flex-wrap">
               <label className="flex items-center gap-1">
-                <input type="radio" name="tipo" value="individual" className="text-blue-700" /> Individual
+                <input type="radio" name="tipo" value="individual" className="text-[#759a9f]" /> Individual
               </label>
               <label className="flex items-center gap-1">
-                <input type="radio" name="tipo" value="familiar" className="text-blue-700" /> Familiar
+                <input type="radio" name="tipo" value="familiar" className="text-[#759a9f]" /> Familiar
               </label>
               <label className="flex items-center gap-1">
-                <input type="radio" name="tipo" value="empresarial" className="text-blue-700" /> Empresarial
+                <input type="radio" name="tipo" value="empresarial" className="text-[#759a9f]" /> Empresarial
               </label>
             </div>
           </div>
 
-          <input type="number" name="quantidade" placeholder="Número de pessoas" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <textarea name="mensagem" placeholder="Mensagem (opcional)" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500" rows={4}></textarea>
-          <button type="submit" className="bg-blue-700 text-white rounded-xl p-3 hover:bg-blue-800 transition-colors">
+          <input type="number" name="quantidade" placeholder="Número de pessoas" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-[#759a9f]" />
+          <textarea name="mensagem" placeholder="Mensagem (opcional)" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-[#759a9f]" rows={4}></textarea>
+          <button type="submit" className="bg-[#759a9f] text-white rounded-xl p-3 hover:bg-[#628185] transition-colors">
             Enviar solicitação
           </button>
           <input type="hidden" name="_next" value="https://wa.me/5511940365963" />
@@ -170,17 +170,17 @@ export default function App() {
       <section className="max-w-3xl mx-auto mb-16">
         <h2 className="text-xl font-semibold mb-4 text-center">Por que contratar com a Ellen?</h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-          <li className="bg-blue-200 rounded-xl p-4 hover:bg-blue-300 transition-colors flex items-center justify-center gap-2">
-            <CheckCircle size={20} className="text-green-600" /> Atendimento 100% personalizado
+          <li className="bg-[#d9e2e3] rounded-xl p-4 hover:bg-[#c9d2d3] transition-colors flex items-center justify-center gap-2">
+            <CheckCircle size={20} className="text-[#759a9f]" /> Atendimento 100% personalizado
           </li>
-          <li className="bg-blue-200 rounded-xl p-4 hover:bg-blue-300 transition-colors flex items-center justify-center gap-2">
-            <Lightbulb size={20} className="text-green-600" /> Consultoria gratuita e sem compromisso
+          <li className="bg-[#d9e2e3] rounded-xl p-4 hover:bg-[#c9d2d3] transition-colors flex items-center justify-center gap-2">
+            <Lightbulb size={20} className="text-[#759a9f]" /> Consultoria gratuita e sem compromisso
           </li>
-          <li className="bg-blue-200 rounded-xl p-4 hover:bg-blue-300 transition-colors flex items-center justify-center gap-2">
-            <Star size={20} className="text-green-600" /> As melhores operadoras do mercado
+          <li className="bg-[#d9e2e3] rounded-xl p-4 hover:bg-[#c9d2d3] transition-colors flex items-center justify-center gap-2">
+            <Star size={20} className="text-[#759a9f]" /> As melhores operadoras do mercado
           </li>
-          <li className="bg-blue-200 rounded-xl p-4 hover:bg-blue-300 transition-colors flex items-center justify-center gap-2">
-            <MessageCircle size={20} className="text-green-600" /> Suporte direto via WhatsApp
+          <li className="bg-[#d9e2e3] rounded-xl p-4 hover:bg-[#c9d2d3] transition-colors flex items-center justify-center gap-2">
+            <MessageCircle size={20} className="text-[#759a9f]" /> Suporte direto via WhatsApp
           </li>
         </ul>
       </section>
@@ -219,13 +219,13 @@ export default function App() {
       <section className="max-w-3xl mx-auto mb-16">
         <h2 className="text-xl font-semibold mb-4 text-center">O que dizem os clientes</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <blockquote className="bg-gray-100 rounded-xl p-4 shadow hover:shadow-md transition-shadow testimonial-card">
+          <blockquote className="bg-[#f5f5f5] rounded-xl p-4 shadow hover:shadow-md transition-shadow testimonial-card">
             <p className="italic text-gray-700">"A Ellen foi super ágil e me ajudou a encontrar o plano ideal para minha família. Super recomendo!"</p>
-            <p className="mt-2 font-semibold text-right text-blue-600">— Mariana R., São Paulo</p>
+            <p className="mt-2 font-semibold text-right text-[#759a9f]">— Mariana R., São Paulo</p>
           </blockquote>
-          <blockquote className="bg-gray-100 rounded-xl p-4 shadow hover:shadow-md transition-shadow testimonial-card">
+          <blockquote className="bg-[#f5f5f5] rounded-xl p-4 shadow hover:shadow-md transition-shadow testimonial-card">
             <p className="italic text-gray-700">"Excelente atendimento e transparência. A consultoria da Ellen me poupou tempo e dinheiro."</p>
-            <p className="mt-2 font-semibold text-right text-blue-600">— Carlos M., Barueri</p>
+            <p className="mt-2 font-semibold text-right text-[#759a9f]">— Carlos M., Barueri</p>
           </blockquote>
         </div>
       </section>
@@ -234,19 +234,19 @@ export default function App() {
       <section className="max-w-3xl mx-auto mb-16">
         <h2 className="text-xl font-semibold mb-4 text-center">Perguntas Frequentes (FAQ)</h2>
         <div className="space-y-4">
-          <details className="bg-gray-100 rounded-xl p-4 shadow hover:shadow-md transition-shadow">
+          <details className="bg-[#f5f5f5] rounded-xl p-4 shadow hover:shadow-md transition-shadow">
             <summary className="font-semibold cursor-pointer">Como funciona a cotação de planos de saúde?</summary>
             <p className="mt-2 text-gray-700">A cotação é feita de forma personalizada, levando em consideração seu perfil, necessidades e orçamento. Basta preencher o formulário acima ou entrar em contato via WhatsApp para um atendimento rápido e eficiente.</p>
           </details>
-          <details className="bg-gray-100 rounded-xl p-4 shadow hover:shadow-md transition-shadow">
+          <details className="bg-[#f5f5f5] rounded-xl p-4 shadow hover:shadow-md transition-shadow">
             <summary className="font-semibold cursor-pointer">Quais documentos são necessários para contratar um plano?</summary>
             <p className="mt-2 text-gray-700">Os documentos variam de acordo com o tipo de plano (individual, familiar ou empresarial). Geralmente, são solicitados RG, CPF, comprovante de residência e, para planos empresariais, documentos da empresa e dos beneficiários.</p>
           </details>
-          <details className="bg-gray-100 rounded-xl p-4 shadow hover:shadow-md transition-shadow">
+          <details className="bg-[#f5f5f5] rounded-xl p-4 shadow hover:shadow-md transition-shadow">
             <summary className="font-semibold cursor-pointer">Posso incluir dependentes no meu plano?</summary>
             <p className="mt-2 text-gray-700">Sim, a maioria dos planos permite a inclusão de dependentes, como cônjuge, filhos e, em alguns casos, outros parentes. As regras de elegibilidade variam conforme a operadora e o tipo de plano.</p>
           </details>
-          <details className="bg-gray-100 rounded-xl p-4 shadow hover:shadow-md transition-shadow">
+          <details className="bg-[#f5f5f5] rounded-xl p-4 shadow hover:shadow-md transition-shadow">
             <summary className="font-semibold cursor-pointer">Qual a diferença entre plano individual, familiar e empresarial?</summary>
             <p className="mt-2 text-gray-700">**Plano Individual:** Contratado por uma única pessoa. **Plano Familiar:** Contratado por uma pessoa para si e seus dependentes. **Plano Empresarial:** Contratado por uma empresa para seus funcionários e seus dependentes, geralmente com custos mais acessíveis.</p>
           </details>
@@ -257,10 +257,10 @@ export default function App() {
       <footer className="max-w-2xl mx-auto border-t pt-6 text-sm text-center">
         <p className="text-gray-600">Contato direto:</p>
         <div className="flex justify-center gap-4 mt-2 flex-wrap">
-          <a href="https://wa.me/5511940365963" className="text-blue-600 hover:underline hover:text-blue-700 transition-colors">WhatsApp</a>
-          <a href="mailto:ellen.saturni@gmail.com" className="text-blue-600 hover:underline hover:text-blue-700 transition-colors">E-mail</a>
-          <a href="https://instagram.com/ellensaturni" className="text-blue-600 hover:underline hover:text-blue-700 transition-colors">Instagram</a>
-          <a href="https://linkedin.com/in/ellencastro" className="text-blue-600 hover:underline hover:text-blue-700 transition-colors">LinkedIn</a>
+          <a href="https://wa.me/5511940365963" className="text-[#759a9f] hover:underline hover:text-[#759a9f] transition-colors">WhatsApp</a>
+          <a href="mailto:ellen.saturni@gmail.com" className="text-[#759a9f] hover:underline hover:text-[#759a9f] transition-colors">E-mail</a>
+          <a href="https://instagram.com/ellensaturni" className="text-[#759a9f] hover:underline hover:text-[#759a9f] transition-colors">Instagram</a>
+          <a href="https://linkedin.com/in/ellencastro" className="text-[#759a9f] hover:underline hover:text-[#759a9f] transition-colors">LinkedIn</a>
         </div>
         <p className="mt-4 text-gray-500">&copy; {new Date().getFullYear()} Ellen Castro Saturni. Todos os direitos reservados.</p>
       </footer>
