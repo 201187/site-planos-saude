@@ -118,7 +118,7 @@ export default function App() {
       
       {/* Header */}
       <header className="text-center mb-10">
-        <img src="/logo_ellen.png" alt="Ellen Castro Saturni - Corretora de Planos de Saúde" className="h-24 mx-auto mb-4" />
+        <img src="/logo_ellen.png" alt="Ellen Castro Saturni - Corretora de Planos de Saúde" className="h-32 mx-auto mb-4" />
         <p className="font-bold text-lg max-w-2xl mx-auto">
           Planos personalizados de acordo com o seu perfil, suas necessidades e seu orçamento. Atendimento humano, direto e eficiente. Conte com a expertise de quem entende do mercado e se importa com o seu bem-estar.
         </p>
