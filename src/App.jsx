@@ -107,7 +107,7 @@ export default function App() {
   ];
 
   return (
-      <div className="min-h-screen bg-[#e4e6e3] text-gray-800 p-6">
+      <div className="min-h-screen bg-[#f8f8f8] text-gray-800 p-6">
       <a
         href="https://wa.me/5511940365963"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50"
@@ -135,7 +135,7 @@ export default function App() {
       </div>
 
       {/* Hero Section - Formulário de cotação */}
-      <section className="bg-[#e4e6e3] rounded-2xl shadow-md p-6 max-w-2xl mx-auto mb-10">
+      <section className="bg-[#f8f8f8] rounded-2xl shadow-md p-6 max-w-2xl mx-auto mb-10">
         <h2 className="text-2xl font-bold mb-4 text-blue-700">Solicite sua cotação</h2>
         <form className="grid gap-4" action="https://formsubmit.co/ellen.saturni@gmail.com" method="POST">
           <input type="text" name="nome" placeholder="Nome completo" className="p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-500" required />
