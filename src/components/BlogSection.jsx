@@ -1,34 +1,102 @@
-import React from 'react';
-import { Calendar, User, ArrowRight } from 'lucide-react';
+import BlogPost from './BlogPost';
 
 export default function BlogSection() {
-  const blogPosts = [
+  const articles = [
     {
       id: 1,
-      title: "Como escolher o plano de saúde ideal para sua família",
-      excerpt: "Descubra os principais fatores a considerar na hora de escolher um plano de saúde que atenda às necessidades da sua família.",
-      author: "Ellen Castro Saturni",
-      date: "15 de Janeiro, 2025",
-      readTime: "5 min de leitura",
-      category: "Dicas"
+      title: "Plano de Saúde Empresarial em São Paulo – Benefícios para sua Equipe",
+      summary: "Contratar um plano de saúde empresarial é essencial para valorizar seus colaboradores e oferecer segurança médica. Neste artigo, você vai entender as vantagens e como escolher o plano ideal.",
+      content: [
+        {
+          title: "Vantagens para a Empresa",
+          items: [
+            "Aumenta a satisfação e retenção da equipe",
+            "Benefício fiscal em algumas situações",
+            "Flexibilidade na escolha de operadoras e tipos de plano"
+          ]
+        },
+        {
+          title: "Vantagens para os Funcionários",
+          items: [
+            "Cobertura completa de consultas, exames e internações",
+            "Acesso a hospitais e clínicas de qualidade em SP",
+            "Atendimento personalizado"
+          ]
+        },
+        {
+          title: "Como Contratar",
+          items: [
+            "Compare preços e coberturas",
+            "Consulte a rede credenciada próxima da empresa",
+            "Conte com a orientação de um corretor especializado"
+          ]
+        }
+      ],
+      whatsappLink: "https://wa.me/5511940365963"
     },
     {
       id: 2,
-      title: "Diferenças entre planos individuais, familiares e empresariais",
-      excerpt: "Entenda as principais diferenças entre os tipos de planos de saúde e qual é o mais adequado para seu perfil.",
-      author: "Ellen Castro Saturni",
-      date: "12 de Janeiro, 2025",
-      readTime: "4 min de leitura",
-      category: "Guias"
+      title: "Plano de Saúde Familiar em São Paulo – Proteja sua Família Hoje",
+      summary: "Ter um plano de saúde adequado é fundamental para a segurança de você e sua família. Veja como escolher a opção certa de forma simples e rápida.",
+      content: [
+        {
+          title: "Benefícios do Plano Familiar",
+          items: [
+            "Cobertura completa para todos os membros da família",
+            "Consultas, exames e internações sem preocupações",
+            "Planos com preços acessíveis e flexíveis"
+          ]
+        },
+        {
+          title: "Dicas para Escolha",
+          items: [
+            "Avalie a faixa etária e necessidades de cada familiar",
+            "Verifique a rede credenciada próxima à sua residência",
+            "Considere consultoria especializada para facilitar a contratação"
+          ]
+        },
+        {
+          title: "Contratação Rápida",
+          items: [
+            "Compare planos e coberturas",
+            "Receba orientação personalizada do corretor",
+            "Solicite cotação pelo WhatsApp e finalize sem burocracia"
+          ]
+        }
+      ],
+      whatsappLink: "https://wa.me/5511940365963"
     },
     {
       id: 3,
-      title: "Carência em planos de saúde: o que você precisa saber",
-      excerpt: "Tudo sobre períodos de carência, quando se aplicam e como planejar sua contratação para evitar surpresas.",
-      author: "Ellen Castro Saturni",
-      date: "10 de Janeiro, 2025",
-      readTime: "6 min de leitura",
-      category: "Educativo"
+      title: "Plano de Saúde para Autônomos e MEI em SP – Cotação Rápida e Gratuita",
+      summary: "Profissionais autônomos e microempreendedores também merecem segurança médica. Veja como escolher o plano de saúde que se adapta ao seu perfil.",
+      content: [
+        {
+          title: "Benefícios do Plano para Autônomos",
+          items: [
+            "Cobertura completa sem depender de empresa",
+            "Acesso a hospitais e clínicas em SP",
+            "Planos flexíveis e acessíveis"
+          ]
+        },
+        {
+          title: "Como Escolher o Plano Ideal",
+          items: [
+            "Avalie idade e necessidades médicas",
+            "Compare coberturas e preços",
+            "Verifique rede credenciada próxima de você"
+          ]
+        },
+        {
+          title: "Contratação Simples",
+          items: [
+            "Entre em contato com um corretor especializado",
+            "Receba cotação personalizada pelo WhatsApp",
+            "Finalize rapidamente sem burocracia"
+          ]
+        }
+      ],
+      whatsappLink: "https://wa.me/5511940365963"
     }
   ];
 
@@ -36,48 +104,15 @@ export default function BlogSection() {
     <section className="max-w-6xl mx-auto mb-16">
       <h2 className="text-2xl font-bold mb-8 text-center text-blue-700">Artigos e Dicas sobre Planos de Saúde</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.map((post) => (
-          <article key={post.id} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">
-                {post.category}
-              </span>
-            </div>
-            
-            <h3 className="text-xl font-semibold mb-3 text-gray-800 line-clamp-2">
-              {post.title}
-            </h3>
-            
-            <p className="text-gray-600 mb-4 line-clamp-3">
-              {post.excerpt}
-            </p>
-            
-            <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-              <div className="flex items-center gap-1">
-                <User size={14} />
-                <span>{post.author}</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <Calendar size={14} />
-                <span>{post.date}</span>
-              </div>
-            </div>
-            
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-gray-500">{post.readTime}</span>
-              <button className="flex items-center gap-1 text-blue-600 hover:text-blue-700 transition-colors font-medium">
-                Ler mais
-                <ArrowRight size={16} />
-              </button>
-            </div>
-          </article>
+        {articles.map((article) => (
+          <BlogPost
+            key={article.id}
+            title={article.title}
+            summary={article.summary}
+            content={article.content}
+            whatsappLink={article.whatsappLink}
+          />
         ))}
-      </div>
-      
-      <div className="text-center mt-8">
-        <button className="bg-blue-700 text-white px-6 py-3 rounded-xl hover:bg-blue-800 transition-colors">
-          Ver todos os artigos
-        </button>
       </div>
     </section>
   );

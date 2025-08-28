@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, CheckCircle, Lightbulb, Star, MessageCircle } from "lucide-react";
 import './App.css'
+import BlogSection from './components/BlogSection';
 
 // Import das imagens das operadoras
 import amilLogo from './assets/operadoras/amil.png';
@@ -229,6 +230,9 @@ export default function App() {
           </blockquote>
         </div>
       </section>
+
+      {/* Seção de Artigos */}
+      <BlogSection />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto mb-16">
