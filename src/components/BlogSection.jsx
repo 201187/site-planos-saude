@@ -4,7 +4,7 @@ export default function BlogSection() {
   const articles = [
     {
       id: 1,
-      title: "Plano de Saúde Empresarial em São Paulo – Benefícios para sua Equipe",
+      title: "Plano de Saúde Empresarial – Benefícios para sua Equipe",
       summary: "Contratar um plano de saúde empresarial é essencial para valorizar seus colaboradores e oferecer segurança médica. Neste artigo, você vai entender as vantagens e como escolher o plano ideal.",
       content: [
         {
@@ -19,7 +19,7 @@ export default function BlogSection() {
           title: "Vantagens para os Funcionários",
           items: [
             "Cobertura completa de consultas, exames e internações",
-            "Acesso a hospitais e clínicas de qualidade em SP",
+            "Acesso a hospitais e clínicas de qualidade",
             "Atendimento personalizado"
           ]
         },
@@ -36,7 +36,7 @@ export default function BlogSection() {
     },
     {
       id: 2,
-      title: "Plano de Saúde Familiar em São Paulo – Proteja sua Família Hoje",
+      title: "Plano de Saúde Familiar – Proteja sua Família Hoje",
       summary: "Ter um plano de saúde adequado é fundamental para a segurança de você e sua família. Veja como escolher a opção certa de forma simples e rápida.",
       content: [
         {
@@ -68,14 +68,14 @@ export default function BlogSection() {
     },
     {
       id: 3,
-      title: "Plano de Saúde para Autônomos e MEI em SP – Cotação Rápida e Gratuita",
+      title: "Plano de Saúde para Autônomos e MEI – Cotação Rápida e Gratuita",
       summary: "Profissionais autônomos e microempreendedores também merecem segurança médica. Veja como escolher o plano de saúde que se adapta ao seu perfil.",
       content: [
         {
           title: "Benefícios do Plano para Autônomos",
           items: [
             "Cobertura completa sem depender de empresa",
-            "Acesso a hospitais e clínicas em SP",
+            "Acesso a hospitais e clínicas",
             "Planos flexíveis e acessíveis"
           ]
         },
